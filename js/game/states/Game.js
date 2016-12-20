@@ -154,6 +154,7 @@ Welpworld.Game.prototype = {
 
     jogo.criarAnimacao('rodar',[0,1,2,3,4,5,6,7],bala);
     jogo.iniciarAnimacao('rodar',10 ,jogo.verdade,bala);
+    jogo.espelharSprite(bala,"esquerda");
 
     jogo.definirPosicao(bala, this.jogador2.x, this.jogador2.y)
     jogo.definirVelocidadeX(bala, -this.velocidadeBalas);
